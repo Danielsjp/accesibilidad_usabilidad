@@ -9,7 +9,7 @@
     font-family: var(--text-normal);
     font-size: 1.1rem;
     color: var(--text-color);
-    font-family: "ballet";
+    font-family: "arial";
 }
 
 :root {
@@ -19,7 +19,7 @@
     --hover-color: #ffa02e;
     /* cambio de el fondo del color para que sea mas accesible color de video*/
     /* --backgroung-color: #b7d2d4; */
-    --backgroung-color:#111;
+    --backgroung-color:#eec881;
     --width-content: 1200px;
     --text-normal: "Mako", sans-serif;
     --text-title: "Belanosima", cursive;
@@ -68,7 +68,7 @@
 
 
 .m {
-    background-color: darkolivegreen;
+    background-color: rgb(219, 161, 73);
 }
 /* Títulos y textos */
 .p1,
