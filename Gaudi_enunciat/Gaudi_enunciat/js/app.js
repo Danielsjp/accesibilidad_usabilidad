@@ -1,0 +1,1 @@
+const miForm = document.forms['miForm'];
