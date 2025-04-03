@@ -9,15 +9,17 @@ El modelo te debe servir como referencia. -->
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/style.css">
+    <title>Casa Batlló</title>
     </head>
+    
     <body>
         <div class="fondo-color h">               
              <a href="#antonio-gaudi" id="skip-link">
                     saltar al contenido principal</a
                 > 
             <div class="width-content">
-                <p id="inicio" class="p1">Casa Batlló</p>
-                <p class="p2">
+                <p id="inicio" class="p1" tabindex="0">Casa Batlló</p>
+                <p class="p2" tabindex="0">
                     Una obra maestra de la arquitectura modernista
                 </p>
 
@@ -38,16 +40,16 @@ El modelo te debe servir como referencia. -->
                     <source
                         media="(max-width: 500px)"
                         srcset="img/346983-Casa-Batllo-500.avif"
-                        >
+                        />
                     <source
                         media="(max-width: 800px)"
                         srcset="img/346983-Casa-Batllo-800.avif"
-                        >
+                        />
                     <img
                         class="imagendiv"
                         src="img/346983-Casa-Batllo-1400.avif"
                         alt="Acceso a Casa Batlló."
-                        >
+                        />
                 </picture>
             </div>
         </div>
@@ -57,10 +59,11 @@ El modelo te debe servir como referencia. -->
                 <p class="p2">Antoni Gaudí</p>
                 <div>
                     <img
-                        src="img/Antoni_Gaudi_1878.avif"                        
+                        src="img/Antoni_Gaudi_1878.avif"
+                        alt="Fotografía de Antoni Gaudí de 1878"                        
                     />
                     <div>
-                        <p >
+                        <p tabindex="0">
                             Gaudí fue un arquitecto con un sentido innato de la
                             geometría y el volumen, así como una gran capacidad
                             imaginativa que le permitía proyectar mentalmente la
@@ -92,7 +95,7 @@ El modelo te debe servir como referencia. -->
                 <p class="p2">El edificio</p>
                 <div>
                     <div>
-                        <p >
+                        <p tabindex="0">
                             La Casa Batlló es un reflejo de la plenitud
                             artística de Gaudí: pertenece a su etapa naturalista
                             (primera década del siglo XX), periodo en que el
@@ -109,7 +112,7 @@ El modelo te debe servir como referencia. -->
                             racionalista o de cualquier premisa clásica.
                         </p>
 
-                        <p >
+                        <p tabindex="0">
                             Sin embargo, como es habitual en las obras de Gaudí,
                             el diseño y la innegable artisticidad del conjunto
                             no privan de que el edificio esté concebido bajo el
@@ -130,7 +133,7 @@ El modelo te debe servir como referencia. -->
                     </div>
                     <img
                         src="img/fachada-590x760.avif"
-                       
+                       alt="La fachada de la Casa Batlló destaca por su mosaico y los balcones en forma de máscaras venecianas."
                     />
                 </div>
             </section>
@@ -140,21 +143,34 @@ El modelo te debe servir como referencia. -->
                 <div class="galeria-fotos">
                     <img
                         src="img/salon.avif"
-                        
+                        alt="El espacio más relevante era el salón principal, con un techo en forma de cielo 
+                        raso de formas helicoidales en relieve, y donde destacaba el gran ventanal de la 
+                        tribuna que daba al paseo de Gracia, decorado con vidrieras en forma de disco de 
+                        diferentes colores."
                     />
 
                     <img
                         src="img/detall.avif"
+                        alt="Una gran lámpara circular remata la espiral del cielo raso."
                         
                     />
 
                     <img
                         src="img/pati2.avif"
+                        alt="El patio está revestido de azulejos, con una ingeniosa gradación de color desde 
+                        el azul de la parte superior hasta el blanco de la inferior, para mejor 
+                        aprovechamiento de la luz, lo que provoca la sensación de estar en una cueva submarina."
                         
                     />
 
                     <img
                         src="img/terrat.avif"
+                        alt="Una de las interpretaciones simbólicas que se ha dado a esta fachada es la de 
+                        San Jorge luchando con el dragón, cuyas víctimas se hallan en la fachada 
+                        representadas por las columnas en forma de hueso y los balcones en forma de calavera. 
+                        Así, la cruz de cuatro brazos sería la espada clavada en el espinazo del animal, 
+                        del que brotaría la sangre, presente en la cerámica roja de esta parte de la cubierta.
+                        "
                         
                     />
                     <div class="volver-inicio">
@@ -168,10 +184,11 @@ El modelo te debe servir como referencia. -->
                 <div>
                     <img
                         src="img/casa_mila.avif"
+                        alt="El modernismo"
                        
                     />
                     <div>
-                        <p >
+                        <p tabindex="0">
                             El modernismo rechaza el estilo poco atractivo de la
                             arquitectura industrial de la primera mitad del
                             siglo XIX, y desarrolla nuevos conceptos
@@ -216,50 +233,43 @@ El modelo te debe servir como referencia. -->
                                 Es necesario rellenar todos los campos
                             </p>
                            
-                           Su nombre:*<input
+                            <label for="nombre">Nombre:</label><input
                                     type="text"
+                                    id="nombre"
                                     required
                                     
                             />
-                           Su opinión:*<input
+                            <label for="nombre">Su opinión:</label><input
                                     type="text"
+                                    id="opinion"
                                     required
                                     
                             />
-
+                            <p id="errorNombre"></p>
+                            <p id="errorOpinion"></p>
                             <div>
-                                <button class="boton" >
-                                    Enviar opinión
-                                </button>
+                                <button type="submit">Enviar opinión</button>
                             </div>
                         </fieldset>
                     </form>
                 </div>
                 <div class="redes-sociales">
-                    <p >Nuestras redes sociales</p>
+                    <p>Nuestras redes sociales</p>
                     <div>
                         <!-- Utilizaremos los aria label para que se indique la informacion del enlace -->
-                        <a href="https://facebook.com" target="_blank"
-                            ><img
-                                class="redes"
-                                src="img/c_facebook.png"
-                              
-                        /></a>
-                        <a href="https://instagram.com" target="_blank"
-                            ><img
-                                class="redes"
-                                src="img/c_instagram.png"
-                               
-                        /></a>
-                        <a href="https://youtube.com" target="_blank"
-                            ><img
-                                class="redes"
-                                src="img/c_youtube.png"
-                               
-                        /></a>
+                        <a href="https://facebook.com" target="_blank">
+                            <img class="redes" src="img/c_facebook.png" alt="Facebook" />
+                        </a>
+                        <a href="https://instagram.com" target="_blank">
+                            <img class="redes" src="img/c_instagram.png" alt="Instagram" />
+                        </a>
+                        <a href="https://youtube.com" target="_blank">
+                            <img class="redes" src="img/c_youtube.png" alt="YouTube" />
+                        </a>
+                        
                     </div>
                     <p >
-                        &#169;Pon aquí tu nombre
+                        &#169;Daniel Sánchez Jiménez-Pajarero
                     </p>
                     
                 </div>
