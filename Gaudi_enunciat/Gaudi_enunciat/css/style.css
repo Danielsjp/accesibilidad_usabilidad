@@ -14,7 +14,7 @@
 
 :root {
     --primary-color: #888;
-    --secondary-color: #8d093e5a;
+    --secondary-color: #8d093e;
     --text-color: #555;
     --hover-color: #ffa02e;
     /* cambio de el fondo del color para que sea mas accesible color de video*/
@@ -68,7 +68,7 @@
 
 
 .m {
-    background-color: rgb(219, 161, 73);
+    background-color: rgb(252, 250, 248);
 }
 /* Títulos y textos */
 .p1,
@@ -245,5 +245,10 @@ button:hover {
 
 .redes-sociales img:hover {
     scale: 1.15;
+}
+
+:focus, :active {
+    outline: 3px solid green;
+    /* color: red; */
 }
 

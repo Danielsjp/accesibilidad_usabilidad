@@ -8,7 +8,9 @@ El modelo te debe servir como referencia. -->
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="gaudi, barcelona, casa batllo, modernismo">
     <link rel="stylesheet" href="css/style.css">
+    
     <title>Casa Batlló</title>
     </head>
     
@@ -60,7 +62,8 @@ El modelo te debe servir como referencia. -->
                 <div>
                     <img
                         src="img/Antoni_Gaudi_1878.avif"
-                        alt="Fotografía de Antoni Gaudí de 1878"                        
+                        alt="Fotografía de Antoni Gaudí de 1878"
+                        tabindex="0"                        
                     />
                     <div>
                         <p tabindex="0">
@@ -86,7 +89,9 @@ El modelo te debe servir como referencia. -->
                             tratamiento de los materiales, como su famoso
                             trencadís hecho con piezas de cerámica de desecho.
                         </p>
-                       
+                        <div class="volver-inicio">
+                            <a href="#inicio">Volver al inicio &#8593;</a>
+                        </div>
                     </div>
                 </div>
             </section>
@@ -129,11 +134,14 @@ El modelo te debe servir como referencia. -->
                             edificio, a través de escaleras y un ascensor.
                         </p>
 
-                       
+                        <div class="volver-inicio">
+                            <a href="#inicio">Volver al inicio &#8593;</a>
+                        </div>
                     </div>
                     <img
                         src="img/fachada-590x760.avif"
                        alt="La fachada de la Casa Batlló destaca por su mosaico y los balcones en forma de máscaras venecianas."
+                       tabindex="0"
                     />
                 </div>
             </section>
@@ -147,11 +155,13 @@ El modelo te debe servir como referencia. -->
                         raso de formas helicoidales en relieve, y donde destacaba el gran ventanal de la 
                         tribuna que daba al paseo de Gracia, decorado con vidrieras en forma de disco de 
                         diferentes colores."
+                        tabindex="0"
                     />
 
                     <img
                         src="img/detall.avif"
                         alt="Una gran lámpara circular remata la espiral del cielo raso."
+                        tabindex="0"
                         
                     />
 
@@ -160,6 +170,7 @@ El modelo te debe servir como referencia. -->
                         alt="El patio está revestido de azulejos, con una ingeniosa gradación de color desde 
                         el azul de la parte superior hasta el blanco de la inferior, para mejor 
                         aprovechamiento de la luz, lo que provoca la sensación de estar en una cueva submarina."
+                        tabindex="0"
                         
                     />
 
@@ -171,6 +182,7 @@ El modelo te debe servir como referencia. -->
                         Así, la cruz de cuatro brazos sería la espada clavada en el espinazo del animal, 
                         del que brotaría la sangre, presente en la cerámica roja de esta parte de la cubierta.
                         "
+                        tabindex="0"
                         
                     />
                     <div class="volver-inicio">
@@ -184,8 +196,8 @@ El modelo te debe servir como referencia. -->
                 <div>
                     <img
                         src="img/casa_mila.avif"
-                        alt="El modernismo"
-                       
+                        alt="Fotografia de la casa mila, representante de el modernismo"
+                        tabindex="0"
                     />
                     <div>
                         <p tabindex="0">
@@ -215,7 +227,9 @@ El modelo te debe servir como referencia. -->
                             reintegró la escultura a la arquitectura como una de
                             sus principales cualidades.
                         </p>
-                       
+                        <div class="volver-inicio">
+                            <a href="#inicio">Volver al inicio &#8593;</a>
+                        </div>
                     </div>
                 </div>
             </section>
@@ -232,18 +246,17 @@ El modelo te debe servir como referencia. -->
                             <p class="p-fieldset" >
                                 Es necesario rellenar todos los campos
                             </p>
-                           
                             <label for="nombre">Nombre:</label><input
                                     type="text"
                                     id="nombre"
                                     required
-                                    
+                                    aria-required="true"
                             />
-                            <label for="nombre">Su opinión:</label><input
+                            <label for="opinion">Su opinión:</label><input
                                     type="text"
                                     id="opinion"
                                     required
-                                    
+                                    aria-required="true"    
                             />
                             <p id="errorNombre"></p>
                             <p id="errorOpinion"></p>

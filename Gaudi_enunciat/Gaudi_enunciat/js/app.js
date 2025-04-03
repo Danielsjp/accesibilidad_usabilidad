@@ -18,7 +18,7 @@ inputNombre.addEventListener("change", () => {
 inputOpinion.addEventListener("change", () => {
     if (inputOpinion.value.trim().length == 0) {
         errorOpinion.innerHTML = "<span style='color: red'>Hay que poner una opinión</span>";
-        inputOpinion.setAttribute("aria-describedby", "errorNombre");
+        inputOpinion.setAttribute("aria-describedby", "errorOpinion");
         inputOpinion.focus()
     } else {
         errorOpinion.innerHTML = ""; // Borra el mensaje de error si el nombre es válido
